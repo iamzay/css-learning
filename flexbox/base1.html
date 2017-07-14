@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>x</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: silver;
+            height: 100px;
+        }
+        div>*{
+            padding: 10px;
+        }
+        #item1,#item3{
+            background: #7dbcea;
+        }
+        #item2,#item4{
+            background: rgba(16,142,233,1);
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="item1">item1</div>
+    <div id="item2">item2</div>
+    <div id="item3">item3</div>
+    <div id="item4">item4</div>
+</div>
+</body>
+</html>
