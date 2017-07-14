@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .stepperInput{
+            display: flex;
+        }
+        .stepperInput_input{
+            border-left:0;
+            border-right:0;
+            width: 60px;
+            text-align: center;
+        }
+        .button{
+            cursor: pointer;
+            padding: 5px 10px;
+            color:#ffffff;
+            background: #4ebbe4;
+            font-size:12px;
+            border:1px solid #16a2d7;
+            border-radius: 4px;
+        }
+        .button-addOnLeft{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .button-addOnRight{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .input{
+            border:1px solid #d7dbdd;
+            padding:0 10px;
+            border-radius:0;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+<div class="stepperInput">
+    <button class="button button-addOnLeft">-</button>
+    <input type="text" placeholder="Age" class="input stepperInput_input"/>
+    <button class="button button-addOnRight">+</button>
+</div>
+</body>
+</html>
