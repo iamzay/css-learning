@@ -1,0 +1,57 @@
+<!--先用justify-content分成左右两部分，对于每部分再用align-items居中对齐-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .siteHeader{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #56727c;
+        }
+        .siteHeader-section{
+            display: flex;
+            align-items: center;
+        }
+        .siteHeader-item{
+            padding:5px 15px;
+            font-size: 12px;
+        }
+        .siteHeader-item+.siteHeader-item {
+            margin-left:5px;
+        }
+        .is-selected{
+            color:#ffffff;
+            background: #415f69;
+            border-radius: 4px;
+        }
+        .siteHeaderButton {
+            cursor:pointer;
+            color:#d9e9ef;
+        }
+    </style>
+</head>
+<body>
+<div class="siteHeader">
+    <div class="siteHeader-section">
+        <div class="siteHeader-item siteHeaderLogo">
+            <div class="fa fa-inbox"></div>
+        </div>
+        <div class="siteHeader-item siteHeaderButton is-selected">Inbox</div>
+        <div class="siteHeader-item siteHeaderButton">Sent</div>
+        <div class="siteHeader-item siteHeaderButton">Trash</div>
+    </div>
+
+    <div class="siteHeader-section">
+        <div class="siteHeader-item siteHeaderButton">Settings</div>
+        <div class="siteHeader-item siteHeaderButton">Log out</div>
+    </div>
+</div>
+</body>
+</html>
