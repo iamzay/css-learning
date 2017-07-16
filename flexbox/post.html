@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .post{
+            display: flex;
+        }
+        .postUser{
+            flex:0 1 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .postBody{
+            flex:1 1 0%;
+            position: relative;
+            padding: 15px;
+            border: 1px solid #CAD0D2;
+            border-radius: 4px;
+        }
+        .postUser__portrait{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100px;
+            height: 90px;
+            font-size: 70px;
+            line-height: 0;
+        }
+        .postUser__name {
+            color: #57727C;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+        }
+        .postBody:after,
+        .postBody:before {
+            right: 100%;
+            top: 35px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        .postBody:after {
+            border-color: transparent;
+            border-right-color: #ffffff;
+            border-width: 8px;
+            margin-top: -8px;
+        }
+
+        .postBody:before {
+            border-color: transparent;
+            border-right-color: #CAD0D2;
+            border-width: 9px;
+            margin-top: -9px;
+        }
+        .postBody__content {
+            color: #57727C;
+            font-size: 12px;
+        }
+
+        .postBody__date {
+            margin-top: 5px;
+            color: #86969C;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+<div class="post">
+    <div class="postUser">
+        <div class="postUser__portrait">
+            <span class="icon fa fa-user-circle-o"></span>
+        </div>
+        <div class="postUser__name">Sherlyn S.</div>
+    </div>
+    <div class="postBody">
+        <div class="postBody__content">
+            I built a tree house out of reclaimed cedar and gave it a coat of my home-made
+            organic coffee-based varnish. Tree housewarming party this weekend!
+        </div>
+        <div class="postBody__date">
+            December 4
+        </div>
+    </div>
+</div>
+</body>
+</html>
