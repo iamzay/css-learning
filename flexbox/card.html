@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .card{
+            display: flex;
+            flex-direction: column;
+            border:1px solid #cad0d2;
+            border-radius: 4px;
+
+        }
+        .card-fixedWidth {
+            max-width: 120px;
+        }
+        .card-descriptionIcon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .card-description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .card-descriptionText {
+            color: #57727C;
+            font-size: 12px;
+            text-align: center;
+            max-width: calc(100% - 30px);
+        }
+
+        .card-price {
+            text-align: center;
+            color: #57727C;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 15px;
+            border-top: 1px solid #D7DBDD;
+            background-color: #EEF3F5;
+        }
+
+    </style>
+</head>
+<body>
+<div class="card card-fixedWidth">
+    <div class="card-description">
+        <div class="icon fa fa-flask card-descriptionIcon"></div>
+        <div class="card-descriptionText">Science potion</div>
+    </div>
+    <div class="card-price">Costs $5</div>
+</div>
+</body>
+</html>
