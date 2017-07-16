@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .featureListItem{
+            display: flex;
+            max-width: 400px;
+            padding: 10px;
+            align-items: center;
+        }
+        .featureListItem--reverse{
+            flex-direction: row-reverse;
+        }
+        .featureListItem + .featureListItem {
+            border-top: 1px solid #D7DBDD;
+        }
+        .featureListItem__icon,
+        .featureListItem__description {
+            padding: 5px 15px;
+        }
+        .featureListItem__icon {
+            font-size: 50px;
+            line-height: 0;
+        }
+
+        .featureListItem__description {
+            color: #57727C;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="featureListItem">
+    <div class="featureListItem__icon">
+        <div class="icon fa fa-calendar"></div>
+    </div>
+    <div class="featureListItem__description">The calendar feature makes scheduling a snap.</div>
+</div>
+<div class="featureListItem featureListItem--reverse">
+    <div class="featureListItem__icon">
+        <div class="icon fa fa-dashboard"></div>
+    </div>
+    <div class="featureListItem__description">Our dashboard gives you a bird&rsquo;s-eye-view-at-a-glance-on-the-go.</div>
+</div>
+<div class="featureListItem">
+    <div class="featureListItem__icon">
+        <div class="icon fa fa-envelope"></div>
+    </div>
+    <div class="featureListItem__description">You can get notified by email or SMS.</div>
+</div>
+</body>
+</html>
