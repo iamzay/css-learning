@@ -1,0 +1,23 @@
+<!--Note: in the vertical direction you need to specify a height for the container. This is different from the horizontal direction, which automatically expands to fit.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .site{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .site-content{
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="site">
+<header>...</header>
+<main class="site-content"></main>
+<footer>...</footer>
+</body>
+</html>

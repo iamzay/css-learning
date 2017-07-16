@@ -1,0 +1,39 @@
+<!--圣杯布局-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .holyGrail,.holyGrail-body{
+            display: flex;
+            flex-direction: column;
+        }
+        .holyGrail-nav{
+            order:0;
+        }
+        @media (min-width: 768px){
+            .holyGrail-body{
+                display: flex;
+                flex-direction: row;
+                flex:1;
+            }
+            .holyGrail-content{
+                flex:1;
+            }
+            .holyGrail-nav,.holyGrail-ads{
+                flex:0 0 12em;
+            }
+        }
+    </style>
+</head>
+<body class="holyGrail">
+<header>...</header>
+<div class="holyGrail-body">
+    <main class="holyGrail-content">...</main>
+    <nav class="holyGrail-nav">...</nav>
+    <aide class="holyGrail-ads">...</aide>
+</div>
+<footer>...</footer>
+</body>
+</html>
