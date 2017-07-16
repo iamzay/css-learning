@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            width: 500px;
+            height: 500px;
+            background: purple;
+
+
+        }
+        .item{
+            width: 120px;
+            height: 100px;
+            background: white;
+            text-align: center;
+            line-height:100px;
+            font-size: 32px;
+            color:purple;
+            flex: 1 0 auto;
+            border: 1px solid purple;
+        }
+        .big{
+            height: 200px;
+        }
+        .small{
+            width: 80px;
+        }
+        div div:first-of-type{
+            margin-bottom:auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item big">1</div>
+    <div class="item small">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item big">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+</div>
+</body>
+</html>

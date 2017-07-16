@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            border:1px solid #cad0d2;
+            border-radius: 4px;
+
+        }
+        .card-fixedWidth {
+            max-width: 120px;
+        }
+        .card-descriptionIcon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .card-description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            flex:1 1 auto;
+        }
+        .card-descriptionText {
+            color: #57727C;
+            font-size: 12px;
+            text-align: center;
+            max-width: calc(100% - 30px);
+        }
+
+        .card-price {
+            text-align: center;
+            color: #57727C;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 15px;
+            border-top: 1px solid #D7DBDD;
+            background-color: #EEF3F5;
+        }
+        .cardGroup{
+            display: flex;
+        }
+        .cardGroup-card{
+            flex:1 1 0%;
+        }
+        .logo-fixedHeight{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="cardGroup">
+    <div class="card cardGroup-card card-fixedWidth">
+        <div class="card-description cardGroup-cardDescription">
+            <div class="icon fa fa-thumbs-o-up card-descriptionIcon logo-fixedHeight"></div>
+            <div class="card-descriptionText">Trial</div>
+        </div>
+        <div class="card-price">Free!</div>
+    </div>
+    <div class="card cardGroup-card card-fixedWidth">
+        <div class="card-description cardGroup-cardDescription">
+            <div class="icon fa fa-trophy card-descriptionIcon logo-fixedHeight"></div>
+            <div class="card-descriptionText">Basic tier<br/>(most popular)</div>
+        </div>
+        <div class="card-price">$10.00</div>
+    </div>
+    <div class="card cardGroup-card card-fixedWidth">
+        <div class="card-description cardGroup-cardDescription">
+            <div class="icon fa fa-bolt card-descriptionIcon logo-fixedHeight"></div>
+            <div class="card-descriptionText">Advanced tier<br/>(only for enterprise-level professionals)</div>
+        </div>
+        <div class="card-price">$6,000.00</div>
+    </div>
+</div>
+</body>
+</html>
