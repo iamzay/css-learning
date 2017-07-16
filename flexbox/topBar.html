@@ -1,0 +1,36 @@
+<!--将一个方向的margin设为auto，会吃掉这个方向所有的freespace-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            margin: 0;
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            margin: 10px;
+        }
+        li:last-child{
+            margin-left:auto;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Interact</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+</nav>
+</body>
+</html>
